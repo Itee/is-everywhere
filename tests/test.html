@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script SRC="../builds/is-everywhere.iife.js"></script>
+<script>
+
+    const is    = IsEveryWhere.is
+    const value = [ 1, 2, 3 ]
+    if ( is.Not.Array( value ) ) { return }
+
+    if ( is.Array( value ) ) {
+
+        if ( is.Array.Empty( value ) ) {
+            console.log( 'empty array' )
+        } else {
+            console.log( 'not empty array' )
+        }
+
+    } else {
+        console.log( 'not array' )
+    }
+
+</script>
+</body>
+</html>
